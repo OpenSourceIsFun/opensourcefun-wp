@@ -1,9 +1,67 @@
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
+			<button data-close type="button" class="popup__close"><svg width="24" height="24" viewBox="0 0 24 24"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L10.5858 12L5.29292 17.2929C4.9024 17.6834 4.9024 18.3166 5.29292 18.7071C5.68345 19.0976 6.31661 19.0976 6.70714 18.7071L12 13.4142L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L13.4142 12L18.7071 6.70711C19.0977 6.31658 19.0977 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5858L6.70711 5.29289Z"
+						fill="#EBEBEB" />
+				</svg>
+			</button>
 			<div class="popup__text">
-				Popup content
+				<h3>Enter Your Contact Information</h3>
+				<div class="popup__item">
+					<span class="p-16">Name</span>
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="popup__item">
+					<span class="p-16">Citizenship</span>
+					<input type="text" placeholder="Country">
+				</div>
+				<div class="popup__item">
+					<span class="p-16">Telegram @</span>
+					<input type="text" placeholder="@example">
+				</div>
+				<div class="popup__item">
+					<span class="p-16">E-mail</span>
+					<input type="email" placeholder="example@mail.com">
+					<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M3 2H17C17.3862 2 17.7213 2.21897 17.8879 2.53954L10.5547 7.42834C10.2188 7.65227 9.78121 7.65227 9.44531 7.42834L2.11209 2.53953C2.27868 2.21896 2.61377 2 3 2ZM2 4.8685V13C2 13.5523 2.44772 14 3 14H17C17.5523 14 18 13.5523 18 13V4.86852L11.6641 9.09244C10.6564 9.76424 9.34361 9.76424 8.33591 9.09244L2 4.8685ZM0 3C0 1.34315 1.34315 0 3 0H17C18.6569 0 20 1.34315 20 3V13C20 14.6569 18.6569 16 17 16H3C1.34315 16 0 14.6569 0 13V3Z"
+							fill="#303030" />
+					</svg>
+				</div>
+				<div class="popup__btn">
+					<div class="checkbox">
+						<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+							name="form[]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text p-14">
+								Yes, I understand and agree to the
+								<a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
+
+							</span></label>
+					</div>
+					<a href="" class="btn btn_green" data-popup="#spasibo">Continue</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="spasibo" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"><svg width="24" height="24" viewBox="0 0 24 24"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L10.5858 12L5.29292 17.2929C4.9024 17.6834 4.9024 18.3166 5.29292 18.7071C5.68345 19.0976 6.31661 19.0976 6.70714 18.7071L12 13.4142L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L13.4142 12L18.7071 6.70711C19.0977 6.31658 19.0977 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5858L6.70711 5.29289Z"
+						fill="#EBEBEB" />
+				</svg>
+			</button>
+			<div class="popup__text">
+				<h3>Thank you!</h3>
+				<p class="p-16" style="opacity: 0.64; text-align: center;">Our Team will contact you shortly to help you
+					set your personal Autonomous Early-Stage
+					Fund</p>
 			</div>
 		</div>
 	</div>

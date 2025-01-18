@@ -94,7 +94,7 @@ flsFunctions.menuInit();
 Документация: https://start-template.ru/modul-popup-vytekayushhie-modalnye-okna-chertogi-frilansera-v3-0-0/
 Сниппет (HTML): pl, pop
 */
-// import './libs/popup.js'
+import "./libs/popup.js";
 
 /*
 Модуль анимации (параллакс) объектов во время движения мыши
@@ -208,7 +208,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
 // Документация: https://start-template.ru/modul-prokrutka-k-nuzhnomu-bloku-plavnaya-navigacziya-po-stranicze-chertogi-frilansera-v3-0-0/
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функциональность добавления классов в хеддер при прокрутке
 // Документация: https://start-template.ru/modul-dobavleniya-klassov-v-shapku-pri-prokrutke-straniczy-chertogi-frilansera-v3-0-0/

@@ -26,6 +26,8 @@ body {
 }
 section {
   padding: 7.7rem 0;
+  position: relative;
+  z-index: 2;
   @media (max-width: $mobile) {
     padding: 4rem 0;
   }

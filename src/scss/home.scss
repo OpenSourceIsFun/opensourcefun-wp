@@ -374,7 +374,7 @@
     height: 20rem;
     background: linear-gradient(180deg, #13120a 0%, rgba(19, 18, 10, 0) 100%);
     position: absolute;
-    top: -8rem;
+    top: 0;
     left: 0;
     @media (max-width: $mobile) {
       height: 10rem;
@@ -388,7 +388,7 @@
     margin-right: auto;
     padding: 17.3rem 0 16.7rem;
     position: relative;
-    z-index: 3;
+
     @media (max-width: $mobile) {
       padding: 10.4rem 0 10.4rem;
       max-width: 34rem;
@@ -706,6 +706,9 @@
     margin-bottom: 1.9rem;
     display: flex;
     align-items: center;
+    svg {
+      margin-right: 8px;
+    }
     @media (max-width: $mobile) {
       font-size: 1.4rem;
       flex-direction: column;
@@ -758,4 +761,7 @@
 }
 .bg-fon {
   background: url(../img/bg-bg.png) center / cover no-repeat;
+}
+.bg-fon-2 {
+  background: url(../img/bg-bg-2.png) center / cover no-repeat;
 }

@@ -18,9 +18,10 @@
 
         }
     });
+
     gsap.from('.foto__container img', {
         autoAlpha: 0,
-        y: 150,
+        y: 100,
         stagger: 0.2,
 
         scrollTrigger: {
@@ -29,5 +30,60 @@
 
         }
     })
+    gsap.fromTo('.one', { y: 0, opacity: 1, }, {
+
+        y: -70,
+        rotate: -20,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".code",
+            scrub: 1,
+
+
+
+        }
+    })
+    gsap.fromTo('.two', { y: 0, }, {
+
+        y: -120,
+        rotate: 40,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".code",
+            scrub: 1,
+
+
+
+        }
+    })
+    gsap.fromTo('.three', { y: 0, opacity: 1, }, {
+
+        y: -150,
+        rotate: 35,
+        x: -150,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".code",
+            scrub: 1,
+
+
+
+        }
+    })
+    gsap.fromTo('.four', { y: 0, opacity: 1, }, {
+
+        y: -150,
+        rotate: -35,
+        x: -150,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".code",
+            scrub: 0.8,
+
+
+
+        }
+    })
+
 
 </script>

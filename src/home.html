@@ -26,18 +26,19 @@
 							AI&nbsp;-&nbsp;agents</h1>
 						<p class="p-16">Autonomous early-stage venture funds are managed by AI agents trained on the
 							strategies and insights of the most influential investors.</p>
-						<a href="" class="btn btn_green">Set Personal Autonomous Early-Stage Fund</a>
+						<a href="" data-popup="#popup" class="btn btn_green">Set Personal Autonomous Early-Stage
+							Fund</a>
 						<div class="social">
-							<a href="">
+							<a href="https://t.me/OpenSourceIsFun" target="_blank">
 								<img src="@img/s01.png" alt="lorem">
 							</a>
-							<a href="">
+							<a href="mailto:fun@opensource.fun" target="_blank">
 								<img src="@img/s02.png" alt="lorem">
 							</a>
-							<a href="">
+							<a href="https://x.com/opensourceisfun " target="_blank">
 								<img src="@img/s03.png" alt="lorem">
 							</a>
-							<a href="">
+							<a href="https://github.com/OpenSourceIsFun " target="_blank">
 								<img src="@img/s04.png" alt="lorem">
 							</a>
 
@@ -50,7 +51,7 @@
 					<div class="citata__label">
 						<p class="p-16">Future:</p>
 					</div>
-					<h2 class="H-40">AI-agent-driven early&nbsp;-&nbsp;stage&nbsp;funds&nbsp;invest  in AI-agent-created
+					<h2 class="H-40">AI-agent-driven early-stage&nbsp;funds&nbsp;invest  in AI-agent-created
 						startups whose
 						tokens
 						are then
@@ -66,10 +67,10 @@
 						<img src="@img/03.png" alt="lorem">
 						<img src="@img/04.png" alt="lorem">
 						<img src="@img/05.png" alt="lorem">
-						<img src="@img/06.png" alt="lorem">
-						<img src="@img/07.png" alt="lorem">
-						<img src="@img/08.png" alt="lorem">
-						<img src="@img/09.png" alt="lorem">
+						<img class="one" src="@img/06.png" alt="lorem">
+						<img class="two" src="@img/07.png" alt="lorem">
+						<img class="three" src="@img/08.png" alt="lorem">
+						<img class="four" src="@img/09.png" alt="lorem">
 						<h2 class="H-40">AI-agents for fund managing, trained on data from the most successful
 							early-stage angel investors.</h2>
 					</div>
@@ -114,6 +115,8 @@
 						</div>
 					</div>
 				</section>
+			</div>
+			<div class="bg-fon-2">
 				<section class="sliders">
 
 					<div class="sliders__container">
@@ -182,7 +185,8 @@
 								<button type="button" class="swiper-button-prev slider__prev"></button>
 								<button type="button" class="swiper-button-next slider__next"></button>
 							</div>
-							<a href="" class="btn btn_green">Submit &#160;<span> a funding application</span> </a>
+							<a href="" data-popup="#popup" class="btn btn_green">Submit&#160;<span> a funding
+									application</span> </a>
 						</div>
 					</div>
 				</section>
@@ -206,7 +210,8 @@
 									innovation without
 									human
 									intervention. Perfect for projects leveraging intelligent automation.</p>
-								<a href="" class="btn btn_green">Show available funds</a>
+								<a href="https://app.opensource.fun/" class="btn btn_green" target="_blank">Show
+									available funds</a>
 							</div>
 							<div class="item grid__item grid-item">
 								<div class="grid-item__top">
@@ -299,8 +304,9 @@
 				</section>
 				@@include('html/_footer.htm',{})
 			</div>
-		</main>
 
+		</main>
+		@@include('html/_popup.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
 </body>

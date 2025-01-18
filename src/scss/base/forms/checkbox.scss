@@ -1,38 +1,52 @@
 .checkbox {
-	position: relative;
-	&:not(:last-child) {
-		margin-bottom: em(5);
-	}
-	// .checkbox__input
-	&__input {
-		position: absolute;
-		width: 0;
-		height: 0;
-		opacity: 0;
-		&:focus-visible + .checkbox__label:before {
-			box-shadow: 0 0 5px #000;
-		}
-		&:checked + .checkbox__label:before {
-			background: #000;
-		}
-	}
-	// .checkbox__label
-	&__label {
-		cursor: pointer;
-		display: inline-flex;
-		position: relative;
-		gap: 10px;
-		&:before {
-			content: "";
-			align-self: flex-start;
-			flex: 0 0 20px;
-			width: 20px;
-			height: 20px;
-			border: 1px solid #a7a9ac;
-		}
-	}
-	// .checkbox__text
-	&__text {
-		align-self: center;
-	}
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: em(5);
+  }
+  // .checkbox__input
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:focus-visible + .checkbox__label:before {
+      box-shadow: 0 0 5px #000;
+    }
+    &:checked + .checkbox__label:before {
+      background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M3 0C1.34315 0 0 1.34315 0 3V15C0 16.6569 1.34315 18 3 18H15C16.6569 18 18 16.6569 18 15V3C18 1.34315 16.6569 0 15 0H3ZM13.7071 6.70711C14.0976 6.31658 14.0976 5.68342 13.7071 5.29289C13.3166 4.90237 12.6834 4.90237 12.2929 5.29289L7 10.5858L5.20711 8.79289C4.81658 8.40237 4.18342 8.40237 3.79289 8.79289C3.40237 9.18342 3.40237 9.81658 3.79289 10.2071L5.58579 12C6.36684 12.7811 7.63317 12.781 8.41421 12L13.7071 6.70711Z' fill='%23D6FB5E' /%3e%3c/svg%3e")
+        center / contain no-repeat;
+    }
+  }
+  // .checkbox__label
+  &__label {
+    cursor: pointer;
+    display: inline-flex;
+    position: relative;
+    gap: 10px;
+    &:before {
+      content: "";
+      align-self: flex-start;
+      flex: 0 0 1.8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      background: #d6fb5e;
+      border-radius: 5px;
+    }
+  }
+  // .checkbox__text
+  &__text {
+    align-self: center;
+    max-width: 24.8rem;
+    a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--cyanide);
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          color: var(--standart);
+        }
+      }
+    }
+  }
 }
