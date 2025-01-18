@@ -1,0 +1,143 @@
+// Заголовки, общие БЄМ блоки и прочее...
+html {
+  font-size: calc(100vw / 1440 * 10);
+
+  @media (max-width: $mobile) {
+    font-size: calc(100vw / 768 * 10);
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: calc(100vw / 360 * 10);
+  }
+}
+[class*="__container"] {
+  max-width: 116rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  @media (max-width: $tablet) {
+    padding: 0 3.2rem;
+  }
+  @media (max-width: $mobile) {
+    padding: 0 1.6rem;
+  }
+}
+body {
+  background: #13120a;
+}
+section {
+  padding: 7.7rem 0;
+  @media (max-width: $mobile) {
+    padding: 4rem 0;
+  }
+}
+h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 133%;
+  color: var(--standart);
+  @media (max-width: $mobile) {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 160%;
+    text-align: center;
+    color: var(--standart);
+  }
+}
+h2.H-40 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 160%;
+  color: var(--ffffff);
+  @media (max-width: $mobile) {
+    font-size: 2.4rem;
+    line-height: 160%;
+  }
+}
+h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: var(--ffffff);
+  line-height: normal;
+  @media (max-width: $mobile) {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: var(--ffffff);
+  }
+}
+h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 160%;
+  color: var(--standart);
+}
+.p-14 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 143%;
+  color: var(--standart);
+}
+.p-16 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--standart);
+}
+.blue {
+  color: #4e93ce;
+}
+.red {
+  color: #d94144;
+}
+.pink {
+  color: #cd4178;
+}
+.green {
+  color: var(--d6fb5e);
+}
+.btn {
+  border-radius: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  transition: all 0.3s ease 0s;
+  border: 1px solid var(--standart);
+  color: var(--standart);
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+
+  &_green {
+    background: var(--d6fb5e);
+    border: 1px solid var(--d6fb5e);
+    color: var(--anthracite);
+  }
+}
+.item {
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.8rem;
+  padding: 3.2rem;
+  backdrop-filter: blur(1.6rem);
+  background: rgba(48, 48, 48, 0.5);
+}
+@media (any-hover: hover) {
+  a.btn:hover {
+    background: var(--d6fb5e);
+    border: 1px solid var(--d6fb5e);
+    color: var(--anthracite);
+  }
+  a.btn_green:hover {
+    border: 1px solid var(--standart);
+    color: var(--standart);
+    background: transparent;
+  }
+}
